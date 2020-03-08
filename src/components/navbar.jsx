@@ -35,7 +35,7 @@ class Navbar extends Component {
       //     </nav>
       //   </div>
 
-      <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-dark sticky">
         <a class="navbar-brand">
           <b className="navbar-font">MyMedia</b>
         </a>

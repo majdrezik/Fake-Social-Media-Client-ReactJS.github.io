@@ -1,5 +1,5 @@
 .photo {
-  height: 30vh;
+  height: 25vh;
   width: 35vw;
 }
 
@@ -8,6 +8,12 @@
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .p2 {
@@ -115,9 +121,9 @@
 #container {
   border: 1.2px;
   border-style: ridge;
-  margin-top: 5vh;
+  margin-top: 13vh;
   width: 50vw;
-  height: 90vh;
+  height: 80vh;
 }
 #first {
   margin-top: 1vh;
@@ -130,5 +136,5 @@
   margin-top: 4vh;
   width: 80%;
   float: right;
-  height: 80vh;
+  height: 72vh;
 }
