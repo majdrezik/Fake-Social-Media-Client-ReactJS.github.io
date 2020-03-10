@@ -1,7 +1,4 @@
 **This is how it looks:**
 
-![](src/pics/social_media/Capture1.PNG)
+![](src/pics/social_media/socialMediaFinal.PNG)
 -------------------------------------------------------------------------------------------------------------------------------------------
-**Some other fake users:**
-
-![](src/pics/social_media/Capture2.PNG)
