@@ -1,4 +1,4 @@
 **This is how it looks:**
 
-![](src/pics/social_media/social media final.PNG)
+![](src/pics/social_media/social%20media%20final.PNG)
 -------------------------------------------------------------------------------------------------------------------------------------------
