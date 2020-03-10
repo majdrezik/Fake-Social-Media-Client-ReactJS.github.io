@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import image2 from "../pics/social_media/react2.png";
 import image3 from "../pics/social_media/react3.png";
 import image1 from "../pics/social_media/react1.jpg";
-import m2 from "../pics/male_avatar/avatar_male2.png";
 import m3 from "../pics/male_avatar/avatar_male3.png";
 import m4 from "../pics/male_avatar/avatar_male4.png";
 import m5 from "../pics/male_avatar/avatar_male5.png";
@@ -10,6 +9,7 @@ import f2 from "../pics/female_avatar/avatar_female2.jpg";
 import f3 from "../pics/female_avatar/avatar_female3.png";
 import f4 from "../pics/female_avatar/avatar_female4.png";
 import f5 from "../pics/female_avatar/avatar_female5.png";
+
 import f6 from "../pics/female_avatar/avatar_female6.png";
 import male_avatar from "../pics/male_avatar/male_avatar-512.png";
 import female_avatar from "../pics/female_avatar/female_avatar.png";
@@ -50,20 +50,8 @@ class Card extends Component {
   };
 
   getAvatar = () => {
-    const images = [
-      male_avatar,
-      female_avatar,
-      m2,
-      m3,
-      m4,
-      m5,
-      f2,
-      f3,
-      f4,
-      f5,
-      f6
-    ];
-    const index = Math.floor(Math.random() * 11);
+    const images = [male_avatar, female_avatar, m3, m4, m5, f2, f3, f4, f5, f6];
+    const index = Math.floor(Math.random() * 10);
     const avatar = images[index];
     return avatar;
   };
@@ -106,12 +94,16 @@ class Card extends Component {
         <div id="first">
           <img src={this.getAvatar()} className="avatar" alt=""></img>
         </div>
-        <div className="card border-0 ml-0 " id="second">
+        <div className="card border-0 ml-0" id="second">
           <div className="card-body p-0">
             <h5 className="card-title">
-              <b>{this.props.name}</b>
-              <i className="fa fa-angle-down ad" title="does nothing!"></i>
-              <p className="account"> {this.props.email}</p>
+              <div className="dropdown">
+                <i className="fa fa-angle-down" title="does nothing!"></i>
+              </div>
+              <div>
+                <b>{this.props.name}</b>
+                <p className="account"> {this.props.email}</p>
+              </div>
             </h5>
             <img src={this.getImageUrl()} className="photo mb-1" alt=""></img>
             <div>

@@ -10,6 +10,29 @@
   margin-bottom: 20px;
 }
 
+.navbar-brand {
+  font-size: x-large;
+}
+
+.dropdown {
+  float: right;
+}
+
+.pF {
+  margin-top: 3vh;
+  font-size: large;
+  color: darkgray;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.borderless {
+  width: 20vw;
+  border: none;
+  border-width: medium;
+  border-color: transparent;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -33,6 +56,9 @@
   margin-top: 3rem;
 }
 
+.div2 {
+  width: 50%;
+}
 .B {
   color: #000;
 }
@@ -47,9 +73,31 @@
 }
 
 .navbar {
-  /* position: fixed; */
   z-index: 1;
   margin-top: 0rem;
+  background-color: #6c757d;
+}
+
+.avatarside {
+  width: 5vw;
+  height: 8vh;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.emailFont {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: x-small;
+  font-size: small;
+  float: right;
+  margin-right: 3vw;
+}
+
+.align {
+  width: 100%;
 }
 
 .navbar ul {
@@ -58,7 +106,7 @@
   margin: 0px;
 }
 .navbar-font {
-  font-size: x-large;
+  font-size: large;
   font-weight: bolder;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -66,7 +114,7 @@
   margin-left: 2vw;
 }
 
-.navbar ul li {
+/* .navbar ul li {
   list-style-type: none;
   display: inline-block;
   margin-left: -5px;
@@ -78,10 +126,11 @@
   border-left: 1px solid #fff;
   cursor: pointer;
   text-align: center;
-}
 
-.navColor {
-  color: rgb(30, 144, 255);
+} */
+
+.card-body {
+  margin-right: 5vw;
 }
 
 .nav-font {
@@ -121,10 +170,19 @@
 #container {
   border: 1.2px;
   border-style: ridge;
-  margin-top: 13vh;
   width: 50vw;
   height: 80vh;
+  background-color: white;
 }
+#container2 {
+  border: 1.2px;
+  border-style: ridge;
+  margin-top: 15vh;
+  width: 50vw;
+  height: 25vh;
+  background-color: white;
+}
+
 #first {
   margin-top: 1vh;
   width: 13%;
@@ -135,6 +193,49 @@
 #second {
   margin-top: 4vh;
   width: 80%;
+  border-radius: 10px;
   float: right;
   height: 72vh;
+}
+#second2 {
+  margin-top: 4vh;
+  width: 80%;
+  float: right;
+  height: 15vh;
+}
+
+.side {
+  position: fixed;
+  width: 22vw;
+}
+
+.right {
+  float: right;
+  margin-right: 0vw;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.div1 {
+  width: 75%;
+  float: left;
+}
+
+.div2 {
+  width: 20%;
+  float: right;
+}
+
+.newFeedIconFont {
+  font-family: Arial, Helvetica, sans-serif;
 }

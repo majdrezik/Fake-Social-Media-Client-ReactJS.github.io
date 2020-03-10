@@ -5,11 +5,14 @@ import Output from "./components/output";
 import Navbar from "./components/navbar";
 import Card from "./components/card";
 import "./styles.css";
+import Feed from "./components/newFeed";
+import Side from "./components/sideBar";
+import Messenger from "./components/messenger";
 
 function App() {
   const [users, setUsers] = useState([
-    { name: "Majd Rezik", email: "majdrezik@gmail.com" },
-    { name: "John Doe", email: "johndoe@gmail.com" },
+    { name: "Ariana Grande", email: "ArianaG@gmail.com" },
+    { name: "Matthew Penykh", email: "MatthewP@gmail.com" },
     { name: "Adele", email: "adele@gmail.com" },
     { name: "Peter P. Josh", email: "peterjosh@outlook.com" },
     { name: "Paul Paul", email: "paul@yahoo.com" },
@@ -22,10 +25,17 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      {users.map(user => (
-        <Card name={user.name} email={user.email} />
-      ))}
+      <div>
+        <Navbar />
+        <div>
+          <Side />
+          <Feed />
+          {users.map(user => (
+            <Card name={user.name} email={user.email} />
+          ))}
+          <Messenger />
+        </div>
+      </div>
     </div>
   );
 }
